@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Scaling Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Auto-Scaling Demo Application</h1>
+        <div class="status">
+            <h2>Server Status</h2>
+            <p>Running on: <span id="server-location">Local VM</span></p>
+            <p>Server IP: <span id="server-ip">Loading...</span></p>
+            <p>Current time: <span id="current-time">Loading...</span></p>
+        </div>
+        <div class="usage">
+            <h2>Resource Usage</h2>
+            <div class="gauge">
+                <div class="gauge-inner">
+                    <div class="gauge-fill" id="cpu-gauge"></div>
+                </div>
+                <p>CPU: <span id="cpu-usage">Loading...</span></p>
+            </div>
+            <div class="gauge">
+                <div class="gauge-inner">
+                    <div class="gauge-fill" id="memory-gauge"></div>
+                </div>
+                <p>Memory: <span id="memory-usage">Loading...</span></p>
+            </div>
+        </div>
+        <button id="load-test">Generate Load</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
