@@ -1,0 +1,49 @@
+# Ignore GCP authentication keys (VERY IMPORTANT)
+*.json
+
+# Ignore compiled binaries
+*.o
+*.out
+*.exe
+
+# Ignore logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Ignore SSH private keys
+id_rsa
+id_rsa.pub
+
+# Ignore system-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore Virtual Machine disk images
+*.vmdk
+*.qcow2
+*.vdi
+*.vbox
+*.ova
+
+# Ignore Python cache (if using Python scripts)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore node_modules (if using Node.js for monitoring)
+node_modules/
+
+# Ignore Cloud SDK cache
+~/.config/gcloud/
+
+# Ignore backup files
+*.bak
+*.old
+*.orig
+
+# Ignore deployment scripts and temporary files
+deploy/
+temp/
